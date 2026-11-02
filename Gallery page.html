@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the Nyeleti Construction project gallery — completed builds, renovations and extensions.">
+    <title>Gallery | Nyeleti Construction</title>
+    <meta name="keywords" content="Nyeleti Construction gallery, construction projects, building, renovations, extensions, materials">
+    <meta name="author" content="Nyeleti Construction">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top utility bar -->
+    <div class="topbar">
+        <span>Call us: <a href="tel:+27766665608">+27 76 666 5608</a></span>
+        <span>Mon &#8211; Fri: 08:00 &#8211; 17:00</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <img class="logo" src="images/nyeleti-construction-logo.jpeg" alt="Nyeleti Construction company logo" style="width: 95px;height: 90px;">
+                <nav style="background-color: navy;padding: 15px;"></nav>
+                <div class="company-name">
+                    <h2>Nyeleti Construction</h2>
+                    <p>Building With Quality</p>
+                </div>
+            </div>
+            <a href="Enquiry.html" class="button button-red header-quote">Get a Quote</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Enquiry.html">Enquiry</a>
+            <a href="Contact us.html">Contact Us</a>
+            <a href="Gallery page.html" class="active">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="site-search" aria-label="Search website">
+        <form id="siteSearchForm" role="search">
+            <label for="siteSearchInput">Search this website</label>
+            <input type="search" id="siteSearchInput" placeholder="Search services or information..." autocomplete="off">
+            <button type="submit">Search</button>
+            <button type="button" id="clearSiteSearch">Clear</button>
+        </form>
+        <p id="siteSearchStatus" class="search-status" aria-live="polite"></p>
+    </section>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Page heading -->
+        <p class="breadcrumb"><a href="index.html">Home</a> &gt; Gallery</p>
+        <section class="about-intro">
+            <p class="gold-text">Our Work</p>
+            <h1>Our Gallery</h1>
+            <p>
+                Take a look at some of the construction work and projects
+                completed by Nyeleti Construction. We take pride in quality
+                workmanship and reliable service.
+            </p>
+        </section>
+
+        <!-- Quality materials -->
+        <section>
+            <h2 class="section-title">Quality Materials</h2>
+            <p>We use quality materials to deliver strong, durable construction projects.</p>
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/roofing-and-building-materials.jpg" alt="Examples of roofing tiles and building materials" loading="lazy"  style="width: 300px;height: 200px;">
+                    <figcaption>Quality Materials</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/concrete-mixing-materials.jpg" alt="Fresh concrete prepared for construction work" loading="lazy"  style="width: 300px;height: 200px;">
+                    <figcaption>On-Site Materials</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/construction-timber-supplies.png" alt="Timber and wooden construction supplies" loading="lazy"  style="width: 300px;height: 200px;">
+                    <figcaption>Durable Supplies</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Completed projects -->
+        <section>
+            <h2 class="section-title">Our Completed Projects</h2>
+            <p>Examples of projects representing the services provided by Nyeleti Construction.</p>
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/commercial-building-project.jpg" alt="Completed commercial building exterior" loading="lazy" style="width: 300px;height: 200px;" >
+                    <figcaption>New Building Project</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/completed-residential-house.jpg" alt="Completed modern residential house exterior" loading="lazy" style="width: 300px;height: 200px;">
+                    <figcaption>Completed Project</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/commercial-interior-fitout.png" alt="Finished commercial shop interior fit-out" loading="lazy" style="width: 300px;height: 200px;">
+                    <figcaption>Commercial Extensions</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="lightbox-image" src="images/house-renovation-project.jpg" alt="House exterior showing renovation and finishing work" loading="lazy"  style="width: 300px;height: 200px;">
+                    <figcaption>Renovations</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="promo">
+            <h2>LIKE WHAT YOU SEE?</h2>
+            <p>Let us build something great for you. Get a free, no-obligation quote today.</p>
+            <a href="Enquiry.html" class="button button-red">Start Your Project</a>
+        </section>
+
+    </main>
+
+    <div id="galleryLightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+        <button type="button" class="lightbox-close" aria-label="Close image viewer">&times;</button>
+        <button type="button" class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <img class="lightbox-content" id="lightboxImage" alt="Selected gallery image">
+        <button type="button" class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+
+    <!-- Footer -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">Back to Top ↑</button>
+<footer>
+        <div class="footer-grid">
+            <div>
+                <h4>Nyeleti Construction</h4>
+                <p>Quality construction services for homes and small commercial projects.</p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z" style="width: 300px;height: 200px;"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.9-.5-5.6c-.3-1-1.1-1.8-2.1-2C18.6 4 12 4 12 4s-6.6 0-8.4.4c-1 .2-1.8 1-2.1 2C1 8.1 1 12 1 12s0 3.9.5 5.6c.3 1 1.1 1.8 2.1 2 1.8.4 8.4.4 8.4.4s6.6 0 8.4-.4c-1 0 1.8-1 2.1-2 .5-1.7.5-5.6.5-5.6zM9.8 15.5v-7l6.2 3.5-6.2 3.5z" style="width: 300px;height: 200px;"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 3.7a6.1 6.1 0 1 0 0 12.2 6.1 6.1 0 0 0 0-12.2zm0 10a4 4 0 1 1 0-7.9 4 4 0 0 1 0 7.9zm6.4-10.2a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z" style="width: 300px;height: 200px;"/></svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.1.1.6-.1 1.2z" style="width: 300px;height: 200px;"/></svg></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html" style="color: #B8860B;">Home</a>
+                <a href="About us.html" style="color: #B8860B;">About Us</a>
+                <a href="Enquiry.html" style="color: #B8860B;">Enquiry</a>
+                <a href="Contact us.html" style="color: #B8860B;">Contact Us</a>
+            </div>
+            <div>
+                <h4>Our Services</h4>
+                <a href="Services.html">Renovations</a>
+                <a href="Services.html">New Builds</a>
+                <a href="Services.html">Extensions</a>
+                <a href="Services.html">Commercial Projects</a>
+                <a href="Services.html">Maintenance</a>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <a href="tel:+27766665608">+27 76 666 5608</a>
+                <a href="mailto:nyeletinkanyezi260@gmail.com">nyeletinkanyezi260@gmail.com</a>
+                <a href="Contact us.html">South Africa</a>
+                <h4 style="margin-top:1rem;">Sign Up</h4>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter email" aria-label="Email address">
+                    <button type="button">&#10148;</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="year">2026</span> Nyeleti Construction. All Rights Reserved.
+        </div>
+        <p class="footer-reference-link"><a href="References.html">References</a></p>
+    </footer>
+
+    <!-- Mobile bottom navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+       <a href="index.html">
+            <svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-4v-6H10v6H6v-9H3l9-8z"/></svg>
+            Home
+        </a>
+        <a href="Services.html">
+            <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+            Services
+        </a>
+        <a href="Enquiry.html">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+            Enquiry
+        </a>
+        <a href="Contact us.html">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            Contact
+        </a>
+    </nav>
+
+    <script src="js/site.js" defer></script>
+</body>
+
+</html>
+

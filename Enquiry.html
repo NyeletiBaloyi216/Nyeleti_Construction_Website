@@ -1,0 +1,814 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Request a quotation from Nyeleti Construction for renovations, extensions, new builds, commercial projects and maintenance.">
+
+    <meta name="keywords"
+        content="Nyeleti Construction, construction quotation, building enquiry, renovations, extensions, new builds">
+
+    <meta name="author" content="Nyeleti Construction">
+
+    <title>Enquiry | Nyeleti Construction </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="topbar">
+
+        <span>
+            Quality Construction • Reliable Service • Professional Workmanship
+        </span>
+
+        <span>
+            <a href="mailto:nyeletinkanyezi260@gmail.com">
+                nyeletinkanyezi260@gmail.com
+            </a>
+        </span>
+
+    </div>
+
+
+    <!--header -->
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="brand">
+
+                <!-- Change this image name if your logo file has a different name -->
+                <img
+                    src="images/nyeleti-construction-logo.jpeg"
+                    alt="Nyeleti Construction company logo"
+                    class="logo" style="height: 100px;width: 90px;"
+                >
+
+                <div class="company-name" style="color: navy;">
+
+                    <h2>Nyeleti Construction</h2>
+
+                    <p>
+                        Building with quality. Building with care.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION BAR -->
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html" style="color:  #B8860B;">Home</a>
+
+            <a href="About us.html" style="color: #B8860B;">About Us</a>
+
+            <a href="Services.html" style="color: #B8860B;">Services</a>
+
+            <a href="Enquiry.html" class="active" style="color: #B8860B;">Enquiry</a>
+
+            <a href="Contact us.html" style="color: #B8860B;">Contact Us </a>
+
+            <a href="Gallery page.html" style="color: #B8860B;">Gallery</a>
+
+        </nav>
+
+    </header>
+
+    <section class="site-search" aria-label="Search website">
+        <form id="siteSearchForm" role="search">
+            <label for="siteSearchInput">Search this website</label>
+            <input type="search" id="siteSearchInput" placeholder="Search services or information..." autocomplete="off">
+            <button type="submit">Search</button>
+            <button type="button" id="clearSiteSearch">Clear</button>
+        </form>
+        <p id="siteSearchStatus" class="search-status" aria-live="polite"></p>
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- Breadcrumb -->
+
+        <div class="breadcrumb">
+
+            <a href="home page.html">Home</a>
+            &nbsp; / &nbsp;
+            Enquiry
+
+        </div>
+
+
+        <!--PAGE INTRODUCTION -->
+
+        <section class="hero">
+
+            <span class="gold-text">
+                REQUEST A QUOTATION
+            </span>
+
+            <h1>
+                Tell Us About Your Project
+            </h1>
+
+            <p>
+                Complete the enquiry form below with your project
+                requirements. The information provided will help
+                Nyeleti Construction understand your needs and
+                prepare a suitable quotation.
+            </p>
+
+            <a href="#quotation-form" class="button button-red">
+                Start Your Enquiry
+            </a>
+
+        </section>
+
+
+        <!--FORM INTRODUCTION -->
+
+        <section>
+
+            <div class="about-intro">
+
+                <h2 class="section-title section-heading">
+                    Request a Formal Quote
+                </h2>
+
+                <p>
+                    Whether you are planning a new building, renovation,
+                    extension or maintenance project, please provide as
+                    much information as possible. This allows us to
+                    understand the scope of your project before
+                    contacting you.
+                </p>
+
+                <p>
+                    <strong>
+                        All fields marked with * are required.
+                    </strong>
+                </p>
+
+            </div>
+
+
+            <!--ENQUIRY FORM-->
+
+            <form
+                id="quotation-form"
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+            >
+
+                <!--  PERSONAL DETAILS -->
+
+                <fieldset>
+
+                    <legend>
+                        Client Information
+                    </legend>
+
+                    <div class="form-grid">
+
+                        <div>
+
+                            <label for="firstName">
+                                First Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter your first name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="lastName">
+                                Surname *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Enter your surname"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="phone">
+                                Contact Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="e.g. 076 666 5608"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!--PROJECT DETAILS -->
+
+                <fieldset>
+
+                    <legend>
+                        Project Details
+                    </legend>
+
+
+                    <label for="projectType">
+                        Type of Project 
+                    </label>
+
+                    <select
+                        id="projectType"
+                        name="projectType"
+                        required
+                    >
+
+                        <option value="">
+                            Please select a project type
+                        </option>
+
+                        <option value="new-build">
+                            New Construction
+                        </option>
+
+                        <option value="renovation">
+                            Renovation and Remodelling
+                        </option>
+
+                        <option value="extension">
+                            Extension or Addition
+                        </option>
+
+                        <option value="commercial">
+                            Small Commercial Project
+                        </option>
+
+                        <option value="fit-out">
+                            Commercial Fit-Out
+                        </option>
+
+                        <option value="maintenance">
+                            Maintenance and Repairs
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label for="propertyAddress">
+                        Project / Property Address *
+                    </label>
+
+                    <textarea
+                        id="propertyAddress"
+                        name="propertyAddress"
+                        placeholder="Enter the address where the work will take place"
+                        required
+                    ></textarea>
+
+
+                    <div class="form-grid">
+
+                        <div>
+
+                            <label for="budget">
+                                Estimated Budget
+                            </label>
+
+                            <select
+                                id="budget"
+                                name="budget"
+                            >
+
+                                <option value="">
+                                    Select an estimated budget
+                                </option>
+
+                                <option value="under-50000">
+                                    Under R50 000
+                                </option>
+
+                                <option value="50000-100000">
+                                    R50 000 - R100 000
+                                </option>
+
+                                <option value="100000-250000">
+                                    R100 000 - R250 000
+                                </option>
+
+                                <option value="250000-500000">
+                                    R250 000 - R500 000
+                                </option>
+
+                                <option value="500000-plus">
+                                    R500 000+
+                                </option>
+
+                                <option value="not-sure">
+                                    Not sure yet
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="startDate">
+                                Preferred Start Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="startDate"
+                                name="startDate"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!--PROJECT DESCRIPTION -->
+
+                <fieldset>
+
+                    <legend>
+                        Project Requirements
+                    </legend>
+
+
+                    <label for="description">
+                        Describe Your Project *
+                    </label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Please describe the work you would like us to complete. Include important details such as the size of the project, rooms involved, materials required or any other relevant information."
+                        required
+                    ></textarea>
+
+
+                    <label for="requirements">
+                        Additional Requirements
+                    </label>
+
+                    <textarea
+                        id="requirements"
+                        name="requirements"
+                        placeholder="Add any additional requirements or questions you may have."
+                    ></textarea>
+
+                </fieldset>
+
+
+                <!-- PREFERRED CONTACT METHOD -->
+
+                <fieldset>
+
+                    <legend>
+                        Preferred Contact Method
+                    </legend>
+
+
+                    <p>
+                        How would you prefer us to contact you?
+                    </p>
+
+
+                    <div class="radio-group">
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="contactMethod"
+                                value="email"
+                                required
+                            >
+
+                            Email
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="contactMethod"
+                                value="phone"
+                            >
+
+                            Phone Call
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="contactMethod"
+                                value="whatsapp"
+                            >
+
+                            WhatsApp
+
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Supporting Information
+                    </legend>
+
+
+                    <label for="documents">
+                        Upload Supporting Images or Documents
+                    </label>
+
+                    <input
+                        type="file"
+                        id="documents"
+                        name="documents"
+                        accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
+                    >
+
+                    <p>
+                        You may upload photographs, plans or other
+                        documents that may help us understand your
+                        project requirements.
+                    </p>
+
+                </fieldset>
+
+
+                <!-- CONSENT -->
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        id="consent"
+                        name="consent"
+                        required
+                    >
+
+                    <span>
+                        I confirm that the information provided in
+                        this form is correct and may be used by
+                        Nyeleti Construction to contact me regarding
+                        my enquiry. *
+                    </span>
+
+                </label>
+
+
+                <!--FORM BUTTONS -->
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+
+                    <input
+                        type="submit"
+                        value="Submit Enquiry"
+                    >
+
+                    <button
+                        type="reset"
+                        class="button button-outline"
+                        style="margin-left: 0.5rem;"
+                    >
+                        Clear Form
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <div class="about-intro">
+
+                <h2 class="section-title section-heading">
+                    What Happens Next?
+                </h2>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <h3>
+                        01. Submit Your Enquiry
+                    </h3>
+
+                    <p>
+                        Provide your project details using the
+                        enquiry form so we can understand your
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <h3>
+                        02. We Review Your Request
+                    </h3>
+
+                    <p>
+                        Our team reviews the information provided
+                        and considers the requirements of your
+                        project.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <h3>
+                        03. We Contact You
+                    </h3>
+
+                    <p>
+                        We will contact you using your preferred
+                        method to discuss your project and any
+                        additional information required.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <h3>
+                        04. Discuss Your Quote
+                    </h3>
+
+                    <p>
+                        We can then discuss the project requirements
+                        and the next steps towards preparing a
+                        quotation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+
+        <section class="cta">
+
+            <h2>
+                Have a Question?
+            </h2>
+
+            <p>
+                We do our best to answer all questions in a timely
+                manner. If you need more information before
+                submitting an enquiry, please contact us.
+            </p>
+
+            <a
+                href="Contact us.html"
+                class="button button-red"
+            >
+                Contact Nyeleti Construction
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!--FOOTER -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">Back to Top ↑</button>
+<footer>
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h4>
+                    Nyeleti Construction
+                </h4>
+
+                <p>
+                    Building with quality, honesty and care.
+                    We provide reliable construction solutions
+                    for residential and small commercial projects.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="About us.html">
+                    About Us
+                </a>
+
+                <a href="Services.html">
+                    Services
+                </a>
+
+                <a href="Enquiry.html">
+                    Enquiry
+                </a>
+
+                <a href="Contact us.html">
+                    Contact Us
+                </a>
+
+                <a href="Gallery page.html">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Phone:
+                    <a href="tel:0791234567">
+                        076 666 5608
+                    </a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:nyeletinkanyezi260@gmail.com">
+                        nyeletinkanyezi260@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Opening Hours
+                </h4>
+
+                <p>
+                    Monday - Friday:
+                    09:00 - 17:00
+                </p>
+
+                <p>
+                    Saturday:
+                    09:00 - 13:00
+                </p>
+
+                <p>
+                    Sunday:
+                    Closed
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Nyeleti Construction.
+                All rights reserved.
+            </p>
+
+        </div>
+
+        <p class="footer-reference-link"><a href="References.html">References</a></p>
+    </footer>
+
+
+    <!--MOBILE NAVIGATION -->
+
+    <div class="mobile-nav">
+
+        <a href="index.html">
+
+            <span>⌂</span>
+            Home
+
+        </a>
+
+        <a href="Services.html">
+
+            <span> </span>
+            Services
+
+        </a>
+
+        <a href="Enquiry.html">
+
+            <span>✎</span>
+            Enquiry
+
+        </a>
+
+        <a href="Contact us.html">
+
+            <span>☎</span>
+            Contact
+
+        </a>
+
+    </div>
+
+    <script src="js/site.js" defer></script>
+</body>
+
+</html>
